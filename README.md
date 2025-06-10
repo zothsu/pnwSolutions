@@ -1,3 +1,5 @@
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/larry-xue/astro-sassify-template?utm_source=oss&utm_medium=github&utm_campaign=larry-xue%2Fastro-sassify-template&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
+
 # Astro Sassify Template
 
 A modern, responsive Astro template with Tailwind CSS and Alpine.js integration. This template provides a solid foundation for building fast, SEO-friendly websites with a clean design system.
