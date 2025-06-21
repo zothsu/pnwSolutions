@@ -18,10 +18,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/alpinejs": "^0.4.5",
-    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/alpinejs": "^0.4.8",
+    "@tailwindcss/vite": "^4.1.10",
     "alpinejs": "^3.13.5",
-    "astro": "^5.6.1",
-    "tailwindcss": "^3.4.3"
+    "astro": "^5.10.0",
+    "tailwindcss": "^4.1.10"
   }
 }
