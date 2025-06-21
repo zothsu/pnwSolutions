@@ -31,7 +31,6 @@ A modern, responsive Astro template with Tailwind CSS and Alpine.js integration.
 │       ├── global.css
 │       └── transitions.css
 ├── astro.config.mjs    # Astro configuration
-├── tailwind.config.mjs # Tailwind CSS configuration
 └── package.json        # Project dependencies
 ```
 
@@ -52,14 +51,14 @@ All commands are run from the root of the project, from a terminal:
 
 ### Colors
 
-The template includes a custom color palette defined in `tailwind.config.mjs`:
+The template includes a custom color palette defined in `src/styles/global.css`:
 
 - Primary: Purple-based color scheme
 - Secondary: Slate-based color scheme
 - Accent: Lime-based color scheme
 - Warning: Yellow-based color scheme
 
-You can customize these colors by editing the `tailwind.config.mjs` file.
+You can customize these colors by editing the `src/styles/global.css` file.
 
 ### Typography
 
