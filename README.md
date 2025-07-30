@@ -15,9 +15,8 @@ Empowering businesses through open source software solutions. We specialize in m
 - **Enterprise Solutions** - Helping businesses adopt and integrate open source tools
 - **Developer Education** - Sharing knowledge through our blog and community initiatives
 
-## �️ Our Tech Stack
 
-## 🛠️ Our Tech Stack
+## Tech Stack
 
 - [Astro](https://astro.build/) - Modern static site generator for content-driven websites
 - [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript development
@@ -28,7 +27,7 @@ Empowering businesses through open source software solutions. We specialize in m
 - [Node.js](https://nodejs.org/) - Server-side JavaScript runtime
 - And many more open source tools and frameworks
 
-## 🌐 Our Website Features
+## Website Features
 
 - **Performance Optimized** - Lightning-fast loading times with modern build tools
 - **SEO-Friendly** - Optimized for search engines and social sharing
@@ -37,11 +36,11 @@ Empowering businesses through open source software solutions. We specialize in m
 - **Accessibility First** - Built with web accessibility standards in mind
 - **Developer Blog** - Insights and tutorials for the open source community
 
-## � Website Structure
+## Website Structure
 
 ```text
 /
-├── public/             # Static assets (favicons, images)
+├── public/             # Static assets (favicons, images) TEMPORARY
 ├── src/
 │   ├── assets/         # Images and design assets
 │   ├── components/     # Reusable UI components
