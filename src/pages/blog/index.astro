@@ -6,69 +6,69 @@ import HeroSection from '../../components/HeroSection.astro';
 
 const posts = [
   {
-    id: 'new-dashboard-features',
-    title: 'New Dashboard Features Released',
-    excerpt: "We've added powerful new analytics tools to help you gain deeper insights into your business performance.",
-    date: 'May 15, 2025',
-    author: 'Sarah Johnson',
-    authorRole: 'Product Manager',
-    authorAvatar: 'https://randomuser.me/api/portraits/women/32.jpg',
-    category: 'Product Updates',
+    id: 'open-source-web-components',
+    title: 'Building Reusable Web Components for the Open Source Community',
+    excerpt: "Learn how to create and publish web components that benefit the entire developer ecosystem. We'll cover best practices for component design, documentation, and community engagement.",
+    date: 'July 25, 2025',
+    author: 'Alex Chen',
+    authorRole: 'Open Source Maintainer',
+    authorAvatar: 'https://randomuser.me/api/portraits/men/32.jpg',
+    category: 'Open Source',
+    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+  },
+  {
+    id: 'jamstack-performance',
+    title: 'Optimizing Jamstack Performance with Modern Build Tools',
+    excerpt: 'Discover how to leverage Vite, Astro, and other modern build tools to create lightning-fast static sites. Performance optimization techniques for the modern web.',
+    date: 'July 18, 2025',
+    author: 'Sarah Kim',
+    authorRole: 'Frontend Architect',
+    authorAvatar: 'https://randomuser.me/api/portraits/women/28.jpg',
+    category: 'Performance',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
   },
   {
-    id: 'mobile-app-launch',
-    title: 'Introducing Our Mobile App',
-    excerpt: 'Access your workspace from anywhere with our new mobile app, now available for iOS and Android devices.',
-    date: 'April 28, 2025',
-    author: 'Michael Chen',
-    authorRole: 'CTO',
-    authorAvatar: 'https://randomuser.me/api/portraits/men/46.jpg',
-    category: 'New Features',
-    image: 'https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+    id: 'contributing-to-open-source',
+    title: 'Your First Open Source Contribution: A Complete Guide',
+    excerpt: 'From finding the right project to submitting your first pull request. A comprehensive guide for developers looking to give back to the community.',
+    date: 'July 10, 2025',
+    author: 'Maria Rodriguez',
+    authorRole: 'Community Manager',
+    authorAvatar: 'https://randomuser.me/api/portraits/women/45.jpg',
+    category: 'Open Source',
+    image: 'https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
   },
   {
-    id: 'api-improvements',
-    title: 'API Improvements and New Endpoints',
-    excerpt: `We've expanded our API capabilities with new endpoints and improved documentation for developers.`,
-    date: 'April 10, 2025',
-    author: 'Emily Rodriguez',
-    authorRole: 'Lead Developer',
-    authorAvatar: 'https://randomuser.me/api/portraits/women/65.jpg',
-    category: 'Developer Updates',
+    id: 'headless-cms-comparison',
+    title: 'Headless CMS Showdown: Strapi vs. Directus vs. Payload',
+    excerpt: 'An in-depth comparison of popular open-source headless CMS solutions. Which one fits your next project best?',
+    date: 'June 28, 2025',
+    author: 'David Park',
+    authorRole: 'Full-Stack Developer',
+    authorAvatar: 'https://randomuser.me/api/portraits/men/67.jpg',
+    category: 'Tools & Frameworks',
     image: 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
   },
   {
-    id: 'team-collaboration-tools',
-    title: 'Enhanced Team Collaboration Tools',
-    excerpt: 'Collaborate more effectively with your team using our new real-time editing and commenting features.',
-    date: 'March 22, 2025',
-    author: 'David Wilson',
-    authorRole: 'Product Designer',
-    authorAvatar: 'https://randomuser.me/api/portraits/men/22.jpg',
-    category: 'Product Updates',
+    id: 'web-accessibility-automation',
+    title: 'Automating Web Accessibility Testing with Open Source Tools',
+    excerpt: 'Build inclusive web experiences using axe-core, Pa11y, and other open-source accessibility testing tools. Integrate accessibility into your CI/CD pipeline.',
+    date: 'June 15, 2025',
+    author: 'Emma Johnson',
+    authorRole: 'Accessibility Engineer',
+    authorAvatar: 'https://randomuser.me/api/portraits/women/52.jpg',
+    category: 'Accessibility',
     image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
   },
   {
-    id: 'security-enhancements',
-    title: 'Security Enhancements and Compliance Updates',
-    excerpt: `We've strengthened our security measures and added new compliance certifications to keep your data safe.`,
-    date: 'March 5, 2025',
-    author: 'Jessica Lee',
-    authorRole: 'Security Officer',
-    authorAvatar: 'https://randomuser.me/api/portraits/women/45.jpg',
-    category: 'Security',
-    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
-  },
-  {
-    id: 'integration-marketplace',
-    title: 'Introducing Our Integration Marketplace',
-    excerpt: 'Connect your favorite tools and services with our new integration marketplace featuring over 50 partners.',
-    date: 'February 18, 2025',
-    author: 'Robert Kim',
-    authorRole: 'Partnership Manager',
-    authorAvatar: 'https://randomuser.me/api/portraits/men/67.jpg',
-    category: 'Integrations',
+    id: 'serverless-edge-computing',
+    title: 'Edge Computing with Open Source: Deno Deploy vs. Cloudflare Workers',
+    excerpt: 'Explore the world of edge computing with open-source runtimes. Performance benchmarks, developer experience, and real-world use cases.',
+    date: 'June 2, 2025',
+    author: 'Ryan Torres',
+    authorRole: 'DevOps Engineer',
+    authorAvatar: 'https://randomuser.me/api/portraits/men/41.jpg',
+    category: 'Cloud & DevOps',
     image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
   }
 ];
@@ -76,13 +76,13 @@ const posts = [
 const categories = [...new Set(posts.map(post => post.category))];
 ---
 
-<Layout title="Blog - SaaSify" description="Latest product updates, feature releases, and company news from SaaSify.">
+<Layout title="Open Source Developer Blog - PNW Solutions" description="Insights, tutorials, and best practices for web developers passionate about open source software and modern development tools.">
   <Header />
   <main>
     <HeroSection 
-      title="Latest Updates & News" 
-      highlightText="Updates"
-      description="Stay up to date with our latest product updates, feature releases, and company news."
+      title="Open Source Developer Blog" 
+      highlightText="Developer"
+      description="Insights, tutorials, and best practices for web developers passionate about open source software and modern development tools."
     />
     
     <!-- Category Filter -->
