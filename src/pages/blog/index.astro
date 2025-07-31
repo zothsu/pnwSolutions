@@ -6,83 +6,105 @@ import HeroSection from '../../components/HeroSection.astro';
 
 const posts = [
   {
-    id: 'open-source-web-components',
-    title: 'Building Reusable Web Components for the Open Source Community',
-    excerpt: "Learn how to create and publish web components that benefit the entire developer ecosystem. We'll cover best practices for component design, documentation, and community engagement.",
-    date: 'July 25, 2025',
-    author: 'Alex Chen',
-    authorRole: 'Open Source Maintainer',
+    id: 'wordpress-vs-squarespace-small-business',
+    title: 'WordPress vs. Squarespace: Which Platform is Right for Your Small Business?',
+    excerpt: "A practical comparison of the two most popular website platforms for small businesses. We'll help you understand the pros, cons, and costs of each option.",
+    date: 'December 28, 2024',
+    author: 'PNW Technology Solutions',
+    authorRole: 'Web Development Team',
     authorAvatar: 'https://randomuser.me/api/portraits/men/32.jpg',
-    category: 'Open Source',
-    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+    category: 'Small Business',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80'
   },
   {
-    id: 'jamstack-performance',
-    title: 'Optimizing Jamstack Performance with Modern Build Tools',
-    excerpt: 'Discover how to leverage Vite, Astro, and other modern build tools to create lightning-fast static sites. Performance optimization techniques for the modern web.',
-    date: 'July 18, 2025',
-    author: 'Sarah Kim',
-    authorRole: 'Frontend Architect',
+    id: 'photography-portfolio-websites',
+    title: 'Creating a Photography Portfolio That Books More Clients',
+    excerpt: 'Essential features every photography website needs: fast image loading, client galleries, booking integration, and SEO tips specifically for photographers.',
+    date: 'December 20, 2024',
+    author: 'Sarah Chen',
+    authorRole: 'Portfolio Specialist',
     authorAvatar: 'https://randomuser.me/api/portraits/women/28.jpg',
-    category: 'Performance',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+    category: 'Creative Professionals',
+    image: 'https://images.unsplash.com/photo-1554048612-b6a482b224ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
   },
   {
-    id: 'contributing-to-open-source',
-    title: 'Your First Open Source Contribution: A Complete Guide',
-    excerpt: 'From finding the right project to submitting your first pull request. A comprehensive guide for developers looking to give back to the community.',
-    date: 'July 10, 2025',
-    author: 'Maria Rodriguez',
-    authorRole: 'Community Manager',
-    authorAvatar: 'https://randomuser.me/api/portraits/women/45.jpg',
-    category: 'Open Source',
-    image: 'https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
-  },
-  {
-    id: 'headless-cms-comparison',
-    title: 'Headless CMS Showdown: Strapi vs. Directus vs. Payload',
-    excerpt: 'An in-depth comparison of popular open-source headless CMS solutions. Which one fits your next project best?',
-    date: 'June 28, 2025',
+    id: 'local-seo-for-small-business',
+    title: 'Local SEO: How to Get Found by Customers in Your Area',
+    excerpt: 'Step-by-step guide to optimizing your website for local search. Google My Business setup, local keywords, and review management strategies.',
+    date: 'December 12, 2024',
     author: 'David Park',
-    authorRole: 'Full-Stack Developer',
-    authorAvatar: 'https://randomuser.me/api/portraits/men/67.jpg',
-    category: 'Tools & Frameworks',
+    authorRole: 'Digital Marketing Consultant',
+    authorAvatar: 'https://randomuser.me/api/portraits/men/45.jpg',
+    category: 'Marketing',
+    image: 'https://images.unsplash.com/photo-1562577309-4932fdd64cd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80'
+  },
+  {
+    id: 'e-commerce-for-etsy-sellers',
+    title: 'Beyond Etsy: Building Your Own Online Store as an Artist',
+    excerpt: 'When and how to transition from Etsy to your own website. E-commerce platforms, payment processing, and keeping your Etsy customers engaged.',
+    date: 'November 28, 2024',
+    author: 'Maria Rodriguez',
+    authorRole: 'E-commerce Specialist',
+    authorAvatar: 'https://randomuser.me/api/portraits/women/67.jpg',
+    category: 'Creative Professionals',
+    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+  },
+  {
+    id: 'website-maintenance-checklist',
+    title: 'Website Maintenance 101: Keep Your Site Running Smoothly',
+    excerpt: 'Essential monthly tasks to keep your WordPress site secure, fast, and up-to-date. Plus signs that you might need professional help.',
+    date: 'November 15, 2024',
+    author: 'Alex Kim',
+    authorRole: 'Technical Support Lead',
+    authorAvatar: 'https://randomuser.me/api/portraits/women/52.jpg',
+    category: 'Website Maintenance',
     image: 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
   },
   {
-    id: 'web-accessibility-automation',
-    title: 'Automating Web Accessibility Testing with Open Source Tools',
-    excerpt: 'Build inclusive web experiences using axe-core, Pa11y, and other open-source accessibility testing tools. Integrate accessibility into your CI/CD pipeline.',
-    date: 'June 15, 2025',
-    author: 'Emma Johnson',
-    authorRole: 'Accessibility Engineer',
-    authorAvatar: 'https://randomuser.me/api/portraits/women/52.jpg',
-    category: 'Accessibility',
-    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+    id: 'restaurant-online-ordering-guide',
+    title: 'Online Ordering for Restaurants: Platform Comparison and Setup',
+    excerpt: 'WooCommerce, DoorDash integration, or custom solutions? A practical guide to getting your restaurant online and taking orders through your website.',
+    date: 'October 30, 2024',
+    author: 'Ryan Torres',
+    authorRole: 'Restaurant Technology Specialist',
+    authorAvatar: 'https://randomuser.me/api/portraits/men/41.jpg',
+    category: 'Small Business',
+    image: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80'
   },
   {
-    id: 'serverless-edge-computing',
-    title: 'Edge Computing with Open Source: Deno Deploy vs. Cloudflare Workers',
-    excerpt: 'Explore the world of edge computing with open-source runtimes. Performance benchmarks, developer experience, and real-world use cases.',
-    date: 'June 2, 2025',
-    author: 'Ryan Torres',
-    authorRole: 'DevOps Engineer',
-    authorAvatar: 'https://randomuser.me/api/portraits/men/41.jpg',
-    category: 'Cloud & DevOps',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+    id: 'booking-systems-service-businesses',
+    title: 'Client Booking Systems: Calendly vs. Custom Solutions for Service Businesses',
+    excerpt: 'Compare booking platforms for gyms, salons, consultants, and other service providers. Integration tips and client communication best practices.',
+    date: 'October 15, 2024',
+    author: 'Emma Johnson',
+    authorRole: 'Business Systems Consultant',
+    authorAvatar: 'https://randomuser.me/api/portraits/women/34.jpg',
+    category: 'Small Business',
+    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+  },
+  {
+    id: 'website-speed-optimization',
+    title: 'Why Your Website is Slow (And How to Fix It)',
+    excerpt: 'Common causes of slow-loading websites and practical solutions. Image optimization, hosting upgrades, and when to call in professional help.',
+    date: 'September 28, 2024',
+    author: 'Jennifer Lee',
+    authorRole: 'Performance Optimization Specialist',
+    authorAvatar: 'https://randomuser.me/api/portraits/women/25.jpg',
+    category: 'Website Maintenance',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
   }
 ];
 
 const categories = [...new Set(posts.map(post => post.category))];
 ---
 
-<Layout title="Open Source Developer Blog - PNW Solutions" description="Insights, tutorials, and best practices for web developers passionate about open source software and modern development tools.">
+<Layout title="Small Business Web Development Blog - PNW Technology Solutions" description="Practical advice for small businesses and artists on websites, online marketing, and digital tools. Written by web development experts who understand your challenges.">
   <Header />
   <main>
     <HeroSection 
-      title="Open Source Developer Blog" 
-      highlightText="Developer"
-      description="Insights, tutorials, and best practices for web developers passionate about open source software and modern development tools."
+      title="Small Business Web Development Blog" 
+      highlightText="Development"
+      description="Practical advice for small businesses and artists on websites, online marketing, and digital tools. Written by experts who understand your challenges."
     />
     
     <!-- Category Filter -->
