@@ -1,11 +1,13 @@
 # PNW Solutions
 
-**Open Source Development & Consulting**
+## Open Source Development & Consulting
 
 Empowering businesses through open source software solutions. We specialize in modern web development, community-driven innovation, and helping enterprises leverage the power of open source technologies.
 
 ## TODO
--[ ] mv favicon from 'public' to 'src'
+
+-[ ] Update favicon
+   -[ ] Mv from 'public' to 'src'
 
 ## 🌟 What We Do
 
@@ -14,7 +16,6 @@ Empowering businesses through open source software solutions. We specialize in m
 - **Community Engagement** - Active contributors to the open source ecosystem
 - **Enterprise Solutions** - Helping businesses adopt and integrate open source tools
 - **Developer Education** - Sharing knowledge through our blog and community initiatives
-
 
 ## Tech Stack
 
@@ -77,26 +78,26 @@ All commands are run from the root of the project, from a terminal:
 
 ## 🎨 Design System
 
-## 🎨 Design System
-
 ### Color Palette
 
 Our website uses a carefully crafted color system defined in `src/styles/global.css`:
 
-- **Primary**: Purple-based colors for brand elements and CTAs
+- **Primary**: Green-based colors for brand elements and CTAs
 - **Secondary**: Slate colors for text and neutral elements  
-- **Accent**: Lime colors for highlights and interactive elements
+- **Accent**: Purple colors for highlights and interactive elements
 - **Warning**: Yellow colors for alerts and notifications
 
 ### Typography
 
 Professional typography stack:
+
 - **Sans**: Inter with system fallbacks for body text
 - **Display**: Lexend with system fallbacks for headings
 
 ### Animations & Transitions
 
 Smooth, purposeful animations enhance user experience:
+
 - Fade In effects for content loading
 - Slide Up animations for progressive disclosure
 - Slide Down transitions for interactive elements
@@ -109,17 +110,20 @@ Smooth, purposeful animations enhance user experience:
 If you're interested in contributing to open source or learning from our codebase:
 
 1. **Explore the Code**
+
    ```bash
    git clone https://github.com/zothsu/pnwSolutions.git
    cd pnwSolutions
    ```
 
 2. **Install Dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start Development Server**
+
    ```bash
    npm run dev
    ```
@@ -134,6 +138,7 @@ Ready to leverage open source for your next project? [Contact us](/contact) to d
 ## 🤝 Contributing to Open Source
 
 We believe in giving back to the community. Check out our [blog](/blog) for:
+
 - Open source project highlights
 - Development tutorials and best practices
 - Community spotlights and success stories
@@ -142,7 +147,7 @@ We believe in giving back to the community. Check out our [blog](/blog) for:
 ## 📞 Get In Touch
 
 - **Website**: [pnwsolutions.dev](https://pnwsolutions.dev)
-- **Email**: hello@pnwsolutions.dev
+- **E-mail** [hello@pnwsolutions.dev](mailto:hello@pnwsolutions.dev)
 - **Blog**: [/blog](/blog)
 - **GitHub**: [@zothsu](https://github.com/zothsu)
 
@@ -152,13 +157,8 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## � Learn More
 
-**Open Source Technologies We Love:**
-- [Astro Documentation](https://docs.astro.build) - Modern web framework
-- [Tailwind CSS](https://tailwindcss.com/docs) - Utility-first CSS
-- [Alpine.js](https://alpinejs.dev/start-here) - Lightweight JavaScript
-- [TypeScript](https://www.typescriptlang.org/docs/) - Type-safe development
-
 **Community Resources:**
+
 - [Open Source Guide](https://opensource.guide/) - How to contribute to open source
 - [GitHub Skills](https://skills.github.com/) - Learn Git and GitHub
 - [MDN Web Docs](https://developer.mozilla.org/) - Web development reference
