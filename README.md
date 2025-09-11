@@ -6,16 +6,34 @@ Empowering businesses through open source software solutions. We specialize in m
 
 ## TODO
 
--[ ] Update favicon
-   -[ ] Mv from 'public' to 'src'
+-[ ] **Add carousel component to reviews.astro**
+-[ ] Update contact page
+   -[ ] Add to top, schedule 15min free btn
+   -[ ] Change contact header to "Prefer the written word? Send us an email!"
+-[ ] Mv favicon from public to src
+-[ ] Update favicon with Tree SVG
+
+-[ ] Add to app.cal
+   -[ ] Digital Consultation
+   -[ ] Web Design Package
+      - Digital Consultation
+      - Web Design Planning
+      - Product Delivery
+   -[ ] Digital Resouce Management
+   -[ ] SECRET EVENT Website Update
+
+-[ ] Add unlinked page for digital services
+   -[ ] Add schedulable services
+      -[ ] Digital Consultation
+      -[ ] Web Design Package
+      -[ ] Digital Resource Management (If you need updates to a site I did not build)
+   -[ ] Create link to app.cal
 
 ## 🌟 What We Do
 
-- **Open Source Development** - Building robust, scalable applications using cutting-edge open source technologies
 - **Web Development Consulting** - Expert guidance on modern frameworks, architecture, and best practices
-- **Community Engagement** - Active contributors to the open source ecosystem
 - **Enterprise Solutions** - Helping businesses adopt and integrate open source tools
-- **Developer Education** - Sharing knowledge through our blog and community initiatives
+- **Community Education** - Sharing knowledge through our blog and community initiatives
 
 ## Tech Stack
 
@@ -36,6 +54,7 @@ Empowering businesses through open source software solutions. We specialize in m
 - **Dark Mode Support** - Automatic theme switching based on user preference
 - **Accessibility First** - Built with web accessibility standards in mind
 - **Developer Blog** - Insights and tutorials for the open source community
+- **Image/Review Carousel** - Components slide across the screen with one in the middle enlarged
 
 ## Website Structure
 
@@ -103,62 +122,13 @@ Smooth, purposeful animations enhance user experience:
 - Slide Down transitions for interactive elements
 - Page transitions for seamless navigation
 
-## 🚀 Getting Started
-
-### For Developers
-
-If you're interested in contributing to open source or learning from our codebase:
-
-1. **Explore the Code**
-
-   ```bash
-   git clone https://github.com/zothsu/pnwSolutions.git
-   cd pnwSolutions
-   ```
-
-2. **Install Dependencies**
-
-   ```bash
-   npm install
-   ```
-
-3. **Start Development Server**
-
-   ```bash
-   npm run dev
-   ```
-
-4. **View the Site**
-   Visit `http://localhost:4321` to see the website locally
-
-### For Businesses
-
-Ready to leverage open source for your next project? [Contact us](/contact) to discuss how we can help your business thrive with modern web technologies.
-
-## 🤝 Contributing to Open Source
-
-We believe in giving back to the community. Check out our [blog](/blog) for:
-
-- Open source project highlights
-- Development tutorials and best practices
-- Community spotlights and success stories
-- Technical deep-dives and case studies
-
 ## 📞 Get In Touch
 
-- **Website**: [pnwsolutions.dev](https://pnwsolutions.dev)
-- **E-mail** [hello@pnwsolutions.dev](mailto:hello@pnwsolutions.dev)
+- **Website**: [pnwdigitalsolutions.com](https://pnwdigitalsolutions.com)
+- **E-mail** [hello@pnwdigitalsolutions.com](mailto:hello@pnwdigitalsolutions.com)
 - **Blog**: [/blog](/blog)
 - **GitHub**: [@zothsu](https://github.com/zothsu)
 
 ## 📝 License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-## � Learn More
-
-**Community Resources:**
-
-- [Open Source Guide](https://opensource.guide/) - How to contribute to open source
-- [GitHub Skills](https://skills.github.com/) - Learn Git and GitHub
-- [MDN Web Docs](https://developer.mozilla.org/) - Web development reference
