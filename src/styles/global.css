@@ -138,6 +138,10 @@
   @apply bg-white dark:bg-secondary-900 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden border border-secondary-200 dark:border-secondary-700;
 }
 
+@utility highlight {
+  @apply text-primary-600 dark:text-primary-400
+}
+
 @layer base {
   h1, h2, h3, h4, h5, h6 {
     @apply font-display dark:text-white;
