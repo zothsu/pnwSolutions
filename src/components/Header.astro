@@ -20,7 +20,7 @@ const allPages = [
 <header class="fixed w-full bg-white/90 dark:bg-secondary-950/90 backdrop-blur-xs z-50 py-4 transition-colors duration-300">
   <div class="container-custom flex items-center justify-between">
     
-    <!-- Logo SVG -->
+    <!-- LOGO SVG -->
     <a href="/" class="flex items-center" aria-label="Go to homepage">
       <svg class="h-20 w-auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
         <!-- Background circle -->
@@ -32,7 +32,8 @@ const allPages = [
       </svg>
       <span class="ml-2 text-l font-display font-semibold text-secondary-900 dark:text-white">PNW Digital Solutions</span>
     </a>
-    
+
+    <!-- NAVBAR -->
     <nav class="hidden md:flex items-center space-x-8">
       <a href="/" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Home</a>
       <a href="/features" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Features</a>
@@ -75,6 +76,7 @@ const allPages = [
       </div>
     </nav>
     
+    <!-- THEME SWITCHER -->
     <div class="flex items-center space-x-4">
       <button 
         x-on:click="darkMode = !darkMode" 
@@ -89,9 +91,9 @@ const allPages = [
         </svg>
       </button>
       
-      <a href="#signup" class="hidden sm:inline-flex btn-primary">Get Started</a>
+      <a href="/contact" class="hidden sm:inline-flex btn-primary">Get Started</a>
       
-      <!-- Mobile Menu Button and Dropdown -->
+      <!-- MOBILE - Menu Button and Dropdown -->
       <div x-data="{ open: false, showAllPages: false }">
         <button 
           @click="open = !open"
