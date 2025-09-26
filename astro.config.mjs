@@ -8,7 +8,11 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [alpinejs(), sitemap()],
+  site: 'https://pnwdigitalsolutions.org/',
+  integrations: [
+    alpinejs(), 
+    sitemap()
+  ],
 
   vite: {
     plugins: [
