@@ -12,7 +12,7 @@ const {
   title = "PNW Digital Solutions - Open Source Development & Consulting",
   description = "Empowering businesses through open source software solutions. Expert web development, consulting, and community-driven innovation for modern enterprises.",
   author = "Z Sullivan",
-  keywords = "keywords"
+  keywords = "keywords",
 } = Astro.props;
 ---
 
@@ -25,6 +25,7 @@ const {
   <meta name="author" content={author} />
 
   <title>{title}</title>
+  <link rel="sitemap" href="/sitemap-index.xml" />
 
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
