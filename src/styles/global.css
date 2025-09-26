@@ -173,6 +173,9 @@
   a {
     @apply text-primary-600 dark:text-primary-400 
   }
+  body {
+    @apply antialiased  bg-white dark:bg-secondary-950 transition-colors duration-300
+  }
 }
 
 /* Animations */
