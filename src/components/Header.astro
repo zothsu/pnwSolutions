@@ -3,23 +3,7 @@ import Nav from "./Nav.astro"
 ---
 
 <header class="fixed w-full bg-white/90 dark:bg-secondary-950/90 backdrop-blur-xs z-50 py-4 transition-colors duration-300">
-  <div class="container-custom flex items-center justify-between">
-    
-    <!-- LOGO SVG -->
-    <a href="/" class="flex items-center" aria-label="Go to homepage">
-      <svg class="h-20 w-auto" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <!-- Background circle -->
-        <circle cx="50" cy="50" r="30" fill="#f0f9ff" class="dark:fill-slate-800" />
-        <!-- Logo -->
-        <image href="/favicon.png" x="28" y="28" height="44" width="44" />
-        <!-- Decorative circle -->
-        <circle cx="50" cy="50" r="26" stroke="#007508" stroke-width="1.1" fill="none" class="dark:stroke-slate-100" stroke-dasharray="3,2" />
-      </svg>
-      <span class="ml-2 text-l font-display font-semibold text-secondary-900 dark:text-white">PNW Digital Solutions</span>
-    </a>
-
-    <Nav />
-  </div>
+  <Nav />
 </header>
 
 <style>
