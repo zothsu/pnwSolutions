@@ -1,10 +1,9 @@
 ---
 import Footer from "../components/Footer.astro";
-import Head from "../components/head.astro";
+import Head from "../components/Head.astro";
+import Scripts from "../components/Scripts.astro"
 import "../styles/global.css";
 import "../styles/transitions.css";
-
-import { ClientRouter } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -23,36 +22,7 @@ import { ClientRouter } from "astro:transitions";
     <div id="page-wrapper" class="page-transition-wrapper">
       <slot />
     </div>
-    <script>
-      // Check for user preference
-      if (localStorage.getItem("darkMode") === null) {
-        // Check system preference
-        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-          localStorage.setItem("darkMode", "true");
-          document.documentElement.classList.add("dark");
-        } else {
-          localStorage.setItem("darkMode", "false");
-        }
-      }
-
-      // Handle page transitions
-      document.addEventListener("astro:page-load", () => {
-        // This runs on initial page load and after each navigation
-        const pageWrapper = document.getElementById("page-wrapper");
-        if (pageWrapper) {
-          pageWrapper.classList.add("page-loaded");
-        }
-      });
-
-      document.addEventListener("astro:before-swap", () => {
-        // This runs before the new page content is swapped in
-        const pageWrapper = document.getElementById("page-wrapper");
-        if (pageWrapper) {
-          pageWrapper.classList.remove("page-loaded");
-        }
-      });
-    </script>
-    <script src="../scripts/transitions.js"></script>
+    <Scripts />
     <Footer />
   </body>
 </html>
