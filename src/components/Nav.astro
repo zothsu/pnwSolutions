@@ -18,36 +18,74 @@ const allPages = [
 ];
 ---
 
+<style>
+  /* Add styles for dark mode SVG in the header */
+  @media (prefers-color-scheme: dark) {
+    .dark\:fill-slate-800 {
+      fill: #1e293b;
+    }
+    .dark\:fill-slate-600 {
+      fill: #475569;
+    }
+    .dark\:fill-slate-500 {
+      fill: #64748b;
+    }
+    .dark\:fill-slate-700 {
+      fill: #334155;
+    }
+    .dark\:stroke-slate-300 {
+      stroke: #cbd5e1;
+    }
+    .dark\:stroke-teal-500 {
+      stroke: #14b824;
+    }
+    .dark\:fill-white {
+      fill: #ffffff;
+    }
+  }
+
+  /* Add hover animation to the logo */
+  header a:hover svg {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+
+  /* Hide Alpine.js elements before Alpine loads */
+  [x-cloak] {
+    display: none !important;
+  }
+</style>
+
 <div class="container-custom flex items-center justify-between bg-red-500">
   <nav class="hidden md:flex items-center space-x-8">
     <a href="/" class="nav-link" aria-label="Go to homepage">
       <!-- LOGO SVG -->
-        <svg
-          class="h-22 w-auto"
-          viewBox="0 0 100 100"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <!-- Background circle -->
-          <circle
-            cx="50"
-            cy="50"
-            r="30"
-            fill="#f0f9ff"
-            class="dark:fill-slate-800"></circle>
-          <!-- Logo -->
-          <image href="/favicon.png" x="28" y="28" height="44" width="44" />
+      <svg
+        class="h-22 w-auto"
+        viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <!-- Background circle -->
+        <circle
+          cx="50"
+          cy="50"
+          r="30"
+          fill="#f0f9ff"
+          class="dark:fill-slate-800"></circle>
+        <!-- Logo -->
+        <image href="/favicon.png" x="28" y="28" height="44" width="44" />
 
-          <!-- Decorative circle -->
-          <circle
-            cx="50"
-            cy="50"
-            r="26"
-            stroke="#007508"
-            stroke-width="1.1"
-            fill="none"
-            class="dark:stroke-slate-100"
-            stroke-dasharray="3,2"></circle>
-        </svg>
+        <!-- Decorative circle -->
+        <circle
+          cx="50"
+          cy="50"
+          r="26"
+          stroke="#007508"
+          stroke-width="1.1"
+          fill="none"
+          class="dark:stroke-slate-100"
+          stroke-dasharray="3,2"></circle>
+      </svg>
     </a>
     <a href="/features" class="nav-link">Features</a>
     <a href="/pricing" class="nav-link">Pricing</a>
@@ -56,7 +94,11 @@ const allPages = [
 
     <!-- All Pages Dropdown -->
     <div x-data="{ open: false }" class="relative">
-      <button @click="open = !open" @click.away="open = false" class="flex items-center text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">
+      <button
+        @click="open = !open"
+        @click.away="open = false"
+        class="flex items-center text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors"
+      >
         All Pages
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -184,24 +226,14 @@ const allPages = [
         class="absolute top-16 right-4 w-48 py-2 bg-white dark:bg-secondary-900 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-hidden"
         x-cloak
       >
-        <a
-          href="/features"
-          class="block px-4 py-2 text-sm nav-link-mobile"
+        <a href="/features" class="block px-4 py-2 text-sm nav-link-mobile"
           >Features</a
         >
-        <a
-          href="/pricing"
-          class="block px-4 py-2 text-sm nav-link-mobile"
+        <a href="/pricing" class="block px-4 py-2 text-sm nav-link-mobile"
           >Pricing</a
         >
-        <a
-          href="/blog"
-          class="block px-4 py-2 text-sm nav-link-mobile"
-          >Blog</a
-        >
-        <a
-          href="/contact"
-          class="block px-4 py-2 text-sm nav-link-mobile"
+        <a href="/blog" class="block px-4 py-2 text-sm nav-link-mobile">Blog</a>
+        <a href="/contact" class="block px-4 py-2 text-sm nav-link-mobile"
           >Contact</a
         >
 

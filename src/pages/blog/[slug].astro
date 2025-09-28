@@ -1,6 +1,5 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 
 export function getStaticPaths() {
@@ -579,7 +578,6 @@ if (!post) return Astro.redirect('/404');
 ---
 
 <Layout title={`${post.title} - SaaSify Blog`} description={post.title}>
-  <Header />
   <main>
     <article class="pt-32 pb-16 md:pt-40 md:pb-24">
       <div class="container-custom max-w-4xl">

@@ -1,6 +1,5 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import HeroSection from '../../components/HeroSection.astro';
 
@@ -99,7 +98,6 @@ const categories = [...new Set(posts.map(post => post.category))];
 ---
 
 <Layout title="Small Business Web Development Blog - PNW Digital Solutions" description="Practical advice for small businesses and artists on websites, online marketing, and digital tools. Written by web development experts who understand your challenges.">
-  <Header />
   <main>
     <HeroSection 
       title="Small Business Web Development Blog" 
