@@ -155,7 +155,7 @@
   }
   
   h1 {
-    @apply font-bold lg:text-4xl md:text-4xl sm:text-3xl mb-4 md:mb-6 animate-slide-down pt-11;
+    @apply font-bold mb-4 md:mb-6 animate-slide-down;
   }
   
   h2 {
