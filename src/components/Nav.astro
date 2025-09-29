@@ -56,9 +56,11 @@ const allPages = [
   }
 </style>
 
-<div class="container-custom flex items-center justify-between">
+<!-- NAVBAR -->
+<div class="container-custom flex items-center justify-between px-2 py-1">
   <nav class="hidden md:flex items-center space-x-8">
     <a href="/" class="nav-link" aria-label="Go to homepage">
+
       <!-- LOGO SVG -->
       <svg
         class="h-22 w-auto"
@@ -86,6 +88,7 @@ const allPages = [
           class="dark:stroke-slate-100"
           stroke-dasharray="3,2"></circle>
       </svg>
+      <!-- LG: MENU -->
     </a>
     <a href="/features" class="nav-link">Features</a>
     <a href="/pricing" class="nav-link">Pricing</a>
@@ -97,12 +100,12 @@ const allPages = [
       <button
         @click="open = !open"
         @click.away="open = false"
-        class="flex items-center text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors"
+        class="nav-link flex items-center transition-colors"
       >
-        All Pages
+        Examples
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-4 w-4 ml-1"
+          class="h-4 w-4"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -126,7 +129,7 @@ const allPages = [
         class="absolute left-0 mt-2 w-56 bg-white dark:bg-secondary-900 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-hidden z-50 max-h-96 overflow-y-auto"
         x-cloak
       >
-        <div class="py-2 grid grid-cols-1 gap-1">
+        <div class="grid grid-cols-1 gap-1">
           {
             allPages.map((page) => (
               <a href={page.url} class="block px-4 py-2 text-sm nav-link">
@@ -140,16 +143,16 @@ const allPages = [
   </nav>
 
   <!-- THEME SWITCHER -->
-  <div class="flex items-center space-x-4 ml-auto">
+  <div class="flex justify-between space-x-4 ml-auto w-screen lg:justify-end md:justify-end">
     <button
       x-on:click="darkMode = !darkMode"
-      class="p-2 rounded-full text-secondary-500 hover:text-secondary-700 dark:text-secondary-400 dark:hover:text-secondary-200 focus:outline-hidden focus:ring-2 focus:ring-primary-500"
+      class="p2 m2 nav-link rounded-full focus:outline-hidden focus:ring-2 focus:ring-primary-500"
       aria-label="Toggle dark mode"
     >
       <svg
         x-show="!darkMode"
         xmlns="http://www.w3.org/2000/svg"
-        class="h-5 w-5"
+        class="h-10 w-10 m-1"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -164,7 +167,7 @@ const allPages = [
       <svg
         x-show="darkMode"
         xmlns="http://www.w3.org/2000/svg"
-        class="h-5 w-5"
+        class="h-10 w-10 nav-link p-1"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -178,7 +181,7 @@ const allPages = [
       </svg>
     </button>
 
-    <!-- MOBILE - Menu Button and Dropdown -->
+    <!-- HAMBURGER ICON -->
     <div x-data="{ open: false, showAllPages: false }">
       <button
         @click="open = !open"
@@ -188,7 +191,7 @@ const allPages = [
         <svg
           x-show="!open"
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
+          class="h-7 w-7"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -202,7 +205,7 @@ const allPages = [
         <svg
           x-show="open"
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
+          class="h-7 w-7"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -215,6 +218,7 @@ const allPages = [
         </svg>
       </button>
 
+<!-- MOBILE - INNER MENU -->
       <div
         x-show="open"
         x-transition:enter="transition ease-out duration-200"
@@ -223,7 +227,7 @@ const allPages = [
         x-transition:leave="transition ease-in duration-150"
         x-transition:leave-start="opacity-100 scale-100"
         x-transition:leave-end="opacity-0 scale-95"
-        class="absolute top-16 right-4 w-48 py-2 bg-white dark:bg-secondary-900 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-hidden"
+        class="z-50 absolute top-16 right-4 w-3/6 p-2 bg-gray-100 dark:bg-secondary-900 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-hidden"
         x-cloak
       >
         <a href="/features" class="block px-4 py-2 text-sm nav-link-mobile"
@@ -237,15 +241,15 @@ const allPages = [
           >Contact</a
         >
 
-        <!-- Mobile All Pages Dropdown -->
+        <!-- MOBILE - EXAMPLE DROPDOWN -->
         <button
           @click="showAllPages = !showAllPages"
-          class="w-full text-left px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800 font-semibold border-t border-gray-200 dark:border-gray-700 mt-1 pt-1 flex items-center justify-between"
+          class="w-full text-left px-4 py-2 text-sm nav-link-mobile hover:bg-secondary-100 dark:hover:bg-secondary-800 font-semibold border-t border-gray-200 dark:border-gray-700 mt-1 pt-1 flex items-center justify-between"
         >
-          All Pages
+          Examples
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-4 w-4"
+            class="h-4 w-4 text-accent-700"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -267,7 +271,7 @@ const allPages = [
             allPages.map((page) => (
               <a
                 href={page.url}
-                class="block px-6 py-1 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-700"
+                class="block px-6 py-1 text-sm nav-link-mobile"
               >
                 {page.text}
               </a>
