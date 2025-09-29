@@ -10,6 +10,7 @@ FIND TODO APP FOR GIT INEGRATION
 
 -[ ] Move away from google fonts, download ones to use. Or what is the preferred method for accesibility?
 -[ ] Mv favicon from public to src
+-[ ] Update to use 'dark:prose-invert'
 
 -[ ] **Add carousel component to reviews.astro**
 -[ ] Update contact page
