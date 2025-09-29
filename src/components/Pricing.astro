@@ -25,7 +25,6 @@ const services = [
     description: "New websites and complex integrations",
     features: [
       "Custom website development",
-      "E-commerce setup",
       "API integrations",
       "Performance optimization",
       "SEO implementation",
@@ -58,58 +57,47 @@ const services = [
 ];
 ---
 
-<section id="pricing" class="section bg-gray-50 dark:bg-gray-800/50">
-  <div class="container-custom">
-    <div class="text-center max-w-3xl mx-auto mb-16">
-
-      <!-- PILL HIGHLIGHT -->
-      <span class="pillHighlight">
-        Services & Pricing
-      </span>
-      <h2>Transparent, Hourly-Based Pricing</h2>
-      <p>
-        No subscriptions, no hidden fees. Pay only for the work you need. All projects start with a free consultation.
-      </p>
-    </div>
-    
+<section id="pricing">
+  <div class="container-custom">    
     <div class="grid md:grid-cols-3 gap-8">
       {services.map((service, index) => (
         <div 
-          class={`card p-6 border ${service.popular ? `border-${service.color}-500 dark:border-${service.color}-400` : 'border-gray-200 dark:border-gray-700'} slide-up relative`}
+          class={`card p-6 pb-2 border ${service.popular ? `border-${service.color}-500 dark:border-${service.color}-400` : 'border-gray-200 dark:border-gray-700'} slide-up relative`}
           style={`animation-delay: ${index * 150}ms`}
         >
-          {service.popular && (
+          {/* {service.popular && (
             <div class={`absolute top-0 right-0 bg-${service.color}-500 text-white px-4 py-1 text-sm font-medium rounded-bl-lg rounded-tr-lg`}>
               Most Popular
             </div>
-          )}
+          )} */}
           
-          <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">{service.name}</h3>
+          <h3 class="mb-2">
+            {service.name}</h3>
           <div class="mb-2">
             {typeof service.price === 'number' ? (
-              <>
+              <div>
                 <span class="text-4xl font-bold text-gray-900 dark:text-white">${service.price}</span>
                 <span class="text-gray-500 dark:text-gray-400">{service.unit}</span>
-              </>
+              </div>
             ) : (
-              <>
+              <div>
                 <span class="text-3xl font-bold text-gray-900 dark:text-white">{service.price}</span>
                 <span class="text-gray-500 dark:text-gray-400"> {service.unit}</span>
-              </>
+              </div>
             )}
           </div>
           <div class="mb-4">
             <div class="flex flex-wrap gap-1">
               {service.platforms.map(platform => (
-                <span class="inline-block px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs rounded">
+                <span class="pillGray text-xs my-2">
                   {platform}
                 </span>
               ))}
             </div>
           </div>
-          <p class="text-gray-600 dark:text-gray-300 mb-6">{service.description}</p>
+          <p class="mb-6">{service.description}</p>
           
-          <ul class="space-y-3 mb-8">
+          <ul class="space-y-3 mb-20">
             {service.features.map(feature => (
               <li class="flex items-start">
                 <svg class={`w-5 h-5 text-${service.color}-500 mr-2 shrink-0 mt-0.5`} fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -119,10 +107,9 @@ const services = [
               </li>
             ))}
           </ul>
-          
           <a 
             href="/contact" 
-            class={`w-full btn ${service.popular ? `bg-${service.color}-600 hover:bg-${service.color}-700 text-white focus:ring-${service.color}-500` : 'btn-outline'}`}
+            class={`w-full btn mt-auto mb-5  ${service.popular ? `bg-${service.color}-600 hover:bg-${service.color}-700 text-white focus:ring-${service.color}-500` : 'btn-outline'}`}
           >
             {service.cta}
           </a>
