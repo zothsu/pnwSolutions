@@ -9,13 +9,11 @@ Empowering businesses through open source software solutions. We specialize in m
 FIND TODO APP FOR GIT INEGRATION
 
 -[ ] Move away from google fonts, download ones to use. Or what is the preferred method for accesibility?
+-[ ] Mv favicon from public to src
 
 -[ ] **Add carousel component to reviews.astro**
 -[ ] Update contact page
    -[ ] Add to top, schedule 15min free btn
-   -[ ] Change contact header to "Prefer the written word? Send us an email!"
--[ ] Mv favicon from public to src
--[x] Update favicon with Tree SVG
 
 -[ ] Add to app.cal
    -[x] Digital Consultation
