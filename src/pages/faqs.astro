@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import HeroSection from "../components/HeroSection.astro";
+import Calendar from "../components/Calendar.astro";
 ---
 
 <Layout title="Frequently Asked Questions - PNW Digital Solutions">
@@ -14,443 +15,380 @@ import HeroSection from "../components/HeroSection.astro";
     <section class="py-16">
       <div class="container-custom">
         <div class="max-w-4xl mx-auto">
-          <!-- FAQ Categories Navigation -->
+          <!-- FAQ Categories Navigation
           <div class="flex flex-wrap justify-center gap-4 mb-12">
             <a href="#general" class="pillHighlight"> General </a>
             <a href="#services" class="pillHighlight"> Services & Pricing </a>
             <a href="#process" class="pillHighlight"> Process </a>
             <a href="#technical" class="pillHighlight"> Technical </a>
-            <a href="#support" class="pillHighlight"> Support </a>
-          </div>
+            <a href="#support" class="pillHighlight"> Support </a> -->
+        </div>
 
-          <!-- General FAQs -->
-          <div id="general" class="mb-16">
-            <h2>
-              <!-- ICON -->
-              <span
-                class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3"
+        <!-- General FAQs -->
+        <div id="general" class="mb-16">
+          <h2 class="mb-5">
+            <!-- ICON -->
+            <span
+              class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3"
+            >
+              <svg
+                class="w-6 h-6 text-primary-600 dark:text-primary-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  class="w-6 h-6 text-primary-600 dark:text-primary-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  ></path>
-                </svg>
-              </span>
-              General Questions
-            </h2>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </span>
+            General Questions
+          </h2>
 
-            <div class="space-y-6">
-              <div class="faqcard">
-                <h3>What is PNW Digital Solutions?</h3>
-                <p>
-                  PNW Digital Solutions is a web development consultancy that
-                  brings proven open source technologies to small business
-                  owners and artists. We specialize in WordPress customization,
-                  modern web development with React and Astro, and helping the
-                  little people build professional websites without enterprise
-                  price tags.
-                </p>
-              </div>
-
-              <div class="faqcard">
-                <h3>Who do you work with?</h3>
-                <p>
-                  We specialize in helping small businesses, artists, and solo
-                  entrepreneurs who need professional websites but don't have
-                  enterprise budgets. This includes local restaurants, freelance
-                  consultants, photographers, musicians, Etsy shop owners, and
-                  service providers who want to compete online.
-                </p>
-              </div>
-
-              <div class="faqcard">
-                <h3>What makes you different from other web developers?</h3>
-                <p>
-                  We focus exclusively on bringing enterprise-grade open source
-                  technologies to small businesses at affordable rates. We
-                  charge $50/hour for quick updates, provide honest pricing
-                  upfront, and use proven technologies instead of experimental
-                  solutions. You work directly with us, not junior developers or
-                  outsourced teams.
-                </p>
-              </div>
-
-              <div class="faqcard">
-                <h3>Do you only work with clients in the Pacific Northwest?</h3>
-                <p>
-                  While we're based in the Pacific Northwest, we work with small
-                  businesses and artists anywhere. All our services can be
-                  delivered remotely, and we're experienced at collaborating
-                  with clients across different time zones.
-                </p>
-              </div>
+          <div class="space-y-6">
+            <div class="faqcard">
+              <h3>What is PNW Digital Solutions?</h3>
+              <p>
+                PNW Digital Solutions is a web development consultancy that
+                brings proven open source technologies to small business owners
+                and artists. We specialize in WordPress customization, modern
+                web development with React and Astro, and helping the little
+                people build professional websites without enterprise price
+                tags.
+              </p>
             </div>
-          </div>
 
-          <!-- Services & Pricing FAQs -->
-          <div id="services" class="mb-16">
-            <h2>
-              <span
-                class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3"
-              >
-                <svg
-                  class="w-6 h-6 text-primary-600 dark:text-primary-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  ></path>
-                </svg>
-              </span>
-              Services & Pricing
-            </h2>
-
-            <div class="space-y-6">
-              <div class="faqcard">
-                <h3>What services do you offer?</h3>
-                <p>
-                  We offer three main services: Quick Updates ($50/hour) for
-                  small changes to existing WordPress or Squarespace sites,
-                  Custom Development (custom quotes) for new websites and
-                  complex projects, and Consultation ($75/hour) for strategic
-                  guidance on technology choices and digital planning. Visit our
-                  <a href="/pricing">pricing page </a> for detailed information.
-                </p>
-              </div>
-
-              <div class="faqcard">
-                <h3>How much does a new website cost?</h3>
-                <p>
-                  Custom development pricing varies based on your specific
-                  needs, complexity, and timeline. Simple business websites
-                  typically start around $1,000-5,000, while more complex
-                  e-commerce or custom applications can range higher. We provide
-                  detailed quotes after understanding your requirements during
-                  our free 15-minute consultation.
-                </p>
-              </div>
-
-              <div class="faqcard">
-                <h3>Do you offer payment plans?</h3>
-                <p>
-                  Yes, we understand that small businesses need flexible payment
-                  options. For larger projects, we typically structure payments
-                  as 50% upfront and 50% upon completion. For very large
-                  projects, we can discuss milestone-based payment plans to
-                  spread costs over time.
-                </p>
-              </div>
-
-              <div class="faqcard">
-                <h3>Do you offer ongoing maintenance?</h3>
-                <p>
-                  Absolutely! Many clients use our $50/hour Quick Updates
-                  service for ongoing maintenance, content updates, and small
-                  improvements. We don't lock you into monthly contracts - you
-                  only pay for the time you actually use.
-                </p>
-              </div>
+            <div class="faqcard">
+              <h3>Who do you work with?</h3>
+              <p>
+                We specialize in helping small businesses, artists, and solo
+                entrepreneurs who need professional websites but don't have
+                enterprise budgets. This includes local restaurants, freelance
+                consultants, photographers, musicians, Etsy shop owners, and
+                service providers who want to compete online.
+              </p>
             </div>
-          </div>
 
-          <!-- Process FAQs -->
-          <div id="process" class="mb-16">
-            <h2>
-              <span
-                class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3"
-              >
-                <svg
-                  class="w-6 h-6 text-primary-600 dark:text-primary-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
-                  ></path>
-                </svg>
-              </span>
-              Process
-            </h2>
-
-            <div class="space-y-6">
-              <div class="faqcard">
-                <h3>How do we get started?</h3>
-                <p>
-                  Every project starts with a free 15-minute consultation where
-                  we listen to your needs and explain how we can help - no sales
-                  pitch, just honest advice. If it's a good fit, we'll provide a
-                  clear quote and timeline. For quick updates, we can often
-                  start work the same day.
-                </p>
-              </div>
-
-              <div class="faqcard">
-                <h3>How long does a typical project take?</h3>
-                <p>
-                  Quick updates are usually completed within 1-3 business days.
-                  Simple business websites typically take 2-4 weeks, while more
-                  complex projects with e-commerce or custom functionality can
-                  take 6-12 weeks. We'll give you a realistic timeline during
-                  the quote process.
-                </p>
-              </div>
-
-              <div class="faqcard">
-                <h3>What do I need to provide?</h3>
-                <p>
-                  To get started, we just need access to your current website
-                  (if you have one), a clear idea of what you want to achieve,
-                  and any specific content or branding guidelines. Don't worry
-                  if you're not sure - we can help clarify your needs during the
-                  consultation.
-                </p>
-              </div>
-
-              <div class="faqcard">
-                <h3>Will my website be mobile-friendly?</h3>
-                <p>
-                  Absolutely! All websites we develop are fully responsive and
-                  mobile-friendly, ensuring they look great and function well on
-                  all devices. We test on multiple screen sizes and can provide
-                  specific mobile design samples upon request.
-                </p>
-              </div>
+            <div class="faqcard">
+              <h3>What makes you different from other web developers?</h3>
+              <p>
+                We focus exclusively on bringing enterprise-grade open source
+                technologies to small businesses at affordable rates. We charge
+                $50/hour for quick updates, provide honest pricing upfront, and
+                use proven technologies instead of experimental solutions. You
+                work directly with us, not junior developers or outsourced
+                teams.
+              </p>
             </div>
-          </div>
 
-          <!-- Technical FAQs -->
-          <div id="technical" class="mb-16">
-            <h2>
-              <span
-                class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3"
-              >
-                <svg
-                  class="w-6 h-6 text-primary-600 dark:text-primary-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                  ></path>
-                </svg>
-              </span>
-              Technical
-            </h2>
-
-            <div class="space-y-6">
-              <div class="faqcard">
-                <h3>What platforms do you use for web development?</h3>
-                <p>
-                  We primarily use WordPress for content-driven websites and
-                  e-commerce, React for interactive web applications, and Astro
-                  for ultra-fast static sites. We can also work with existing
-                  Squarespace or Wix sites for updates and improvements. We
-                  choose the right technology based on your specific needs and
-                  budget.
-                </p>
-              </div>
-
-              <div class="faqcard">
-                <h3>Do you provide hosting and domain services?</h3>
-                <p>
-                  We can help you set up hosting and register domains, but we
-                  don't provide hosting services directly. This keeps your costs
-                  low and gives you flexibility to choose the hosting provider
-                  that best fits your needs and budget. We'll recommend
-                  reliable, affordable options and help with the setup.
-                </p>
-              </div>
-
-              <div class="faqcard">
-                <h3>What about website security and backups?</h3>
-                <p>
-                  All websites we build follow security best practices,
-                  including SSL certificates, secure hosting configurations, and
-                  regular updates. We'll show you how to maintain backups or can
-                  set up automated backup systems. For WordPress sites, we
-                  recommend specific security plugins and practices.
-                </p>
-              </div>
-
-              <div class="faqcard">
-                <h3>Can you integrate with my existing business tools?</h3>
-                <p>
-                  Absolutely! We specialize in connecting websites with the
-                  tools you already use - email marketing platforms, payment
-                  processors, booking systems, social media, and more. Check out
-                  our <a href="/integrations">integrations page</a> to see what's
-                  possible.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Support FAQs -->
-          <div id="support" class="mb-16">
-            <h2>
-              <span
-                class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3"
-              >
-                <svg
-                  class="w-6 h-6 text-primary-600 dark:text-primary-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
-                  ></path>
-                </svg>
-              </span>
-              Support & Training
-            </h2>
-
-            <div class="space-y-6">
-              <div class="faqcard">
-                <h3>What kind of support do you provide after launch?</h3>
-                <p>
-                  We provide ongoing support through our Quick Updates service
-                  for any changes or issues that arise. We're also available for
-                  consultation calls to help you plan improvements or
-                  troubleshoot problems. You're not locked into contracts - just
-                  pay for what you need when you need it.
-                </p>
-              </div>
-
-              <div class="faqcard">
-                <h3>Do you provide training on how to use my website?</h3>
-                <p>
-                  Yes! We include basic training as part of every project to
-                  help you update content, add new pages, and perform basic
-                  maintenance. For more comprehensive training, we offer
-                  consultation sessions where we can teach you advanced features
-                  or help optimize your workflow.
-                </p>
-              </div>
-
-              <div class="faqcard">
-                <h3>What if something breaks on my website?</h3>
-                <p>
-                  If there's an issue with our work within 30 days of project
-                  completion, we'll fix it at no charge. For issues that arise
-                  later due to plugin updates, hosting problems, or other
-                  factors, we can help troubleshoot and resolve them through our
-                  Quick Updates service.
-                </p>
-              </div>
-
-              <div class="faqcard">
-                <h3>
-                  Can you help me understand website analytics and performance?
-                </h3>
-                <p>
-                  Absolutely! We can set up Google Analytics, explain what the
-                  data means for your business, and help you track the metrics
-                  that matter most to your goals. We also offer consultation
-                  sessions focused on improving website performance and search
-                  engine optimization.
-                </p>
-              </div>
+            <div class="faqcard">
+              <h3>Do you only work with clients in the Pacific Northwest?</h3>
+              <p>
+                While we're based in the Pacific Northwest, we work with small
+                businesses and artists anywhere. All our services can be
+                delivered remotely, and we're experienced at collaborating with
+                clients across different time zones.
+              </p>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- SCHEDULE -->
-      <div class="flex flex-col items-center mt-12 gap-7">
-        <h2 class="mx-10">
-          More questions? Schedule a free 15-minute consultation!
-        </h2>
+        <!-- Services & Pricing FAQs -->
+        <div id="services" class="mb-16">
+          <h2 class="mb-5">
+            <span
+              class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3"
+            >
+              <svg
+                class="w-6 h-6 text-primary-600 dark:text-primary-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </span>
+            Services & Pricing
+          </h2>
 
-        <!-- Cal inline embed code begins -->
-        <div
-          class="w-full h-full overflow-scroll sm:w-4/5 sm:justify-around md:w-4/5"
-          id="my-cal-inline-free-consultation"
-        >
+          <div class="space-y-6">
+            <div class="faqcard">
+              <h3>What services do you offer?</h3>
+              <p>
+                We offer three main services: Quick Updates ($50/hour) for small
+                changes to existing WordPress or Squarespace sites, Custom
+                Development (custom quotes) for new websites and complex
+                projects, and Consultation ($75/hour) for strategic guidance on
+                technology choices and digital planning. Visit our
+                <a href="/pricing">pricing page </a> for detailed information.
+              </p>
+            </div>
+
+            <div class="faqcard">
+              <h3>How much does a new website cost?</h3>
+              <p>
+                Custom development pricing varies based on your specific needs,
+                complexity, and timeline. Simple business websites typically
+                start around $1,000-5,000, while more complex e-commerce or
+                custom applications can range higher. We provide detailed quotes
+                after understanding your requirements during our free 15-minute
+                consultation.
+              </p>
+            </div>
+
+            <div class="faqcard">
+              <h3>Do you offer payment plans?</h3>
+              <p>
+                Yes, we understand that small businesses need flexible payment
+                options. For larger projects, we typically structure payments as
+                50% upfront and 50% upon completion. For very large projects, we
+                can discuss milestone-based payment plans to spread costs over
+                time.
+              </p>
+            </div>
+
+            <div class="faqcard">
+              <h3>Do you offer ongoing maintenance?</h3>
+              <p>
+                Absolutely! Many clients use our $50/hour Quick Updates service
+                for ongoing maintenance, content updates, and small
+                improvements. We don't lock you into monthly contracts - you
+                only pay for the time you actually use.
+              </p>
+            </div>
+          </div>
         </div>
-        <script type="text/javascript">
-          (function (C, A, L) {
-            let p = function (a, ar) {
-              a.q.push(ar);
-            };
-            let d = C.document;
-            C.Cal =
-              C.Cal ||
-              function () {
-                let cal = C.Cal;
-                let ar = arguments;
-                if (!cal.loaded) {
-                  cal.ns = {};
-                  cal.q = cal.q || [];
-                  d.head.appendChild(d.createElement("script")).src = A;
-                  cal.loaded = true;
-                }
-                if (ar[0] === L) {
-                  const api = function () {
-                    p(api, arguments);
-                  };
-                  const namespace = ar[1];
-                  api.q = api.q || [];
-                  if (typeof namespace === "string") {
-                    cal.ns[namespace] = cal.ns[namespace] || api;
-                    p(cal.ns[namespace], ar);
-                    p(cal, ["initNamespace", namespace]);
-                  } else p(cal, ar);
-                  return;
-                }
-                p(cal, ar);
-              };
-          })(window, "https://app.cal.com/embed/embed.js", "init");
-          Cal("init", "free-consultation", {
-            origin: "https://app.cal.com",
-          });
 
-          Cal.ns["free-consultation"]("inline", {
-            elementOrSelector: "#my-cal-inline-free-consultation",
-            config: { layout: "month_view" },
-            calLink: "team/pnwdigitalsolutions/free-consultation",
-          });
+        <!-- Process FAQs -->
+        <div id="process" class="mb-16">
+          <h2 class="mb-5">
+            <span
+              class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3"
+            >
+              <svg
+                class="w-6 h-6 text-primary-600 dark:text-primary-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+                ></path>
+              </svg>
+            </span>
+            Process
+          </h2>
 
-          Cal.ns["free-consultation"]("ui", {
-            cssVarsPerTheme: {
-              light: { "cal-brand": "#176c00" },
-              dark: { "cal-brand": "#d7ffe5" },
-            },
-            hideEventTypeDetails: false,
-            layout: "month_view",
-          });
-        </script>
-        <!-- Cal inline embed code ends -->
+          <div class="space-y-6">
+            <div class="faqcard">
+              <h3>How do we get started?</h3>
+              <p>
+                Every project starts with a free 15-minute consultation where we
+                listen to your needs and explain how we can help - no sales
+                pitch, just honest advice. If it's a good fit, we'll provide a
+                clear quote and timeline. For quick updates, we can often start
+                work the same day.
+              </p>
+            </div>
+
+            <div class="faqcard">
+              <h3>How long does a typical project take?</h3>
+              <p>
+                Quick updates are usually completed within 1-3 business days.
+                Simple business websites typically take 2-4 weeks, while more
+                complex projects with e-commerce or custom functionality can
+                take 6-12 weeks. We'll give you a realistic timeline during the
+                quote process.
+              </p>
+            </div>
+
+            <div class="faqcard">
+              <h3>What do I need to provide?</h3>
+              <p>
+                To get started, we just need access to your current website (if
+                you have one), a clear idea of what you want to achieve, and any
+                specific content or branding guidelines. Don't worry if you're
+                not sure - we can help clarify your needs during the
+                consultation.
+              </p>
+            </div>
+
+            <div class="faqcard">
+              <h3>Will my website be mobile-friendly?</h3>
+              <p>
+                Absolutely! All websites we develop are fully responsive and
+                mobile-friendly, ensuring they look great and function well on
+                all devices. We test on multiple screen sizes and can provide
+                specific mobile design samples upon request.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical FAQs -->
+        <div id="technical" class="mb-16">
+          <h2 class="mb-5">
+            <span
+              class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3"
+            >
+              <svg
+                class="w-6 h-6 text-primary-600 dark:text-primary-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                ></path>
+              </svg>
+            </span>
+            Technical
+          </h2>
+
+          <div class="space-y-6">
+            <div class="faqcard">
+              <h3>What platforms do you use for web development?</h3>
+              <p>
+                We primarily use WordPress for content-driven websites and
+                e-commerce, React for interactive web applications, and Astro
+                for ultra-fast static sites. We can also work with existing
+                Squarespace or Wix sites for updates and improvements. We choose
+                the right technology based on your specific needs and budget.
+              </p>
+            </div>
+
+            <div class="faqcard">
+              <h3>Do you provide hosting and domain services?</h3>
+              <p>
+                We can help you set up hosting and register domains, but we
+                don't provide hosting services directly. This keeps your costs
+                low and gives you flexibility to choose the hosting provider
+                that best fits your needs and budget. We'll recommend reliable,
+                affordable options and help with the setup.
+              </p>
+            </div>
+
+            <div class="faqcard">
+              <h3>What about website security and backups?</h3>
+              <p>
+                All websites we build follow security best practices, including
+                SSL certificates, secure hosting configurations, and regular
+                updates. We'll show you how to maintain backups or can set up
+                automated backup systems. For WordPress sites, we recommend
+                specific security plugins and practices.
+              </p>
+            </div>
+
+            <div class="faqcard">
+              <h3>Can you integrate with my existing business tools?</h3>
+              <p>
+                Absolutely! We specialize in connecting websites with the tools
+                you already use - email marketing platforms, payment processors,
+                booking systems, social media, and more. Check out our <a
+                  href="/integrations">integrations page</a
+                > to see what's possible.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Support FAQs -->
+        <div id="support" class="mb-16">
+          <h2 class="mb-5">
+            <span
+              class="inline-block rounded-full bg-primary-100 dark:bg-primary-900 p-2 mr-3"
+            >
+              <svg
+                class="w-6 h-6 text-primary-600 dark:text-primary-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                ></path>
+              </svg>
+            </span>
+            Support & Training
+          </h2>
+
+          <div class="space-y-6">
+            <div class="faqcard">
+              <h3>What kind of support do you provide after launch?</h3>
+              <p>
+                We provide ongoing support through our Quick Updates service for
+                any changes or issues that arise. We're also available for
+                consultation calls to help you plan improvements or troubleshoot
+                problems. You're not locked into contracts - just pay for what
+                you need when you need it.
+              </p>
+            </div>
+
+            <div class="faqcard">
+              <h3>Do you provide training on how to use my website?</h3>
+              <p>
+                Yes! We include basic training as part of every project to help
+                you update content, add new pages, and perform basic
+                maintenance. For more comprehensive training, we offer
+                consultation sessions where we can teach you advanced features
+                or help optimize your workflow.
+              </p>
+            </div>
+
+            <div class="faqcard">
+              <h3>What if something breaks on my website?</h3>
+              <p>
+                If there's an issue with our work within 30 days of project
+                completion, we'll fix it at no charge. For issues that arise
+                later due to plugin updates, hosting problems, or other factors,
+                we can help troubleshoot and resolve them through our Quick
+                Updates service.
+              </p>
+            </div>
+
+            <div class="faqcard">
+              <h3>
+                Can you help me understand website analytics and performance?
+              </h3>
+              <p>
+                Absolutely! We can set up Google Analytics, explain what the
+                data means for your business, and help you track the metrics
+                that matter most to your goals. We also offer consultation
+                sessions focused on improving website performance and search
+                engine optimization.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- SCHEDULE -->
+    <div class="text-center">
+      <h2 class="text-4xl mb-5">More questions?</h2>
+      <Calendar>
+    </div>
   </main>
 </Layout>
