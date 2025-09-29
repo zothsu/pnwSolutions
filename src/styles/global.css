@@ -206,5 +206,5 @@
   @apply text-accent-600 hover:text-accent-900 dark:text-accent-50 dark:hover:text-accent-500 font-medium transition-colors;
 }
 .nav-link-mobile {
-  @apply md:hidden p-2 rounded-md font-bold text-accent-600 hover:text-secondary-900 dark:text-accent-400 dark:hover:text-accent-200 focus:outline-hidden focus:ring-2 focus:ring-primary-500
+  @apply md:hidden p-2 rounded-md font-bold text-accent-700 hover:text-secondary-900 dark:text-accent-400 dark:hover:text-accent-200 focus:outline-hidden focus:ring-2 focus:ring-primary-500
 }
