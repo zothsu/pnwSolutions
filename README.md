@@ -10,12 +10,16 @@ FIND TODO APP FOR GIT INEGRATION
 
 -[ ] Move away from google fonts, download ones to use. Or what is the preferred method for accesibility?
 -[ ] Mv favicon from public to src
+
+### Refactoring
+
 -[ ] Update to use 'dark:prose-invert'
+
+### TBD
 
 -[ ] **Add carousel component to reviews.astro**
 -[ ] Update contact page
    -[ ] Add to top, schedule 15min free btn
-
 -[ ] Add to app.cal
    -[x] Digital Consultation
    -[ ] Web Design Package
@@ -58,32 +62,6 @@ FIND TODO APP FOR GIT INEGRATION
 - **Accessibility First** - Built with web accessibility standards in mind
 - **Developer Blog** - Insights and tutorials for the open source community
 - **Image/Review Carousel** - Components slide across the screen with one in the middle enlarged
-
-## Website Structure
-
-```text
-/
-├── public/             # Static assets (favicons, images) TEMPORARY
-├── src/
-│   ├── assets/         # Images and design assets
-│   ├── components/     # Reusable UI components
-│   │   ├── Header.astro
-│   │   ├── Footer.astro
-│   │   ├── Hero.astro
-│   │   └── ...
-│   ├── layouts/        # Page layouts
-│   │   └── Layout.astro
-│   ├── pages/          # Website routes
-│   │   ├── index.astro      # Homepage
-│   │   ├── blog/            # Developer blog
-│   │   ├── company.astro    # About us
-│   │   ├── contact.astro    # Contact form
-│   │   └── ...
-│   ├── scripts/        # JavaScript utilities
-│   └── styles/         # Global styles and animations
-├── astro.config.mjs    # Astro configuration
-└── package.json        # Project dependencies
-```
 
 ## 🔧 Development Commands
 
